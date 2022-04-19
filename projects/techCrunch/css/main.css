@@ -1,0 +1,558 @@
+*{
+  box-sizing: border-box;
+}
+body{font-family: arial;}
+
+body{
+  margin-left: 30px;
+}
+  .logo{
+    width: 14%;
+    float: left;
+  }
+  .tip{
+    width: 40%;
+    float: left;
+  }
+  .follow{
+    width: 40%;
+    float: right;
+  }
+
+  .follow span{
+    float: left;
+    width: 17%;
+  }
+  .follow ul{
+    float: left;
+    width: 71%;
+  }
+
+  .banner h3{
+    width: 33%;
+    float: left;
+  }
+  .banner p{
+    width: 28%;
+    float: left;
+  }
+  .banner a{
+    width: 20%;
+    float: left;
+  }
+
+  .columnleft{
+    width: 70%;
+    float: left;
+  }
+    .report{
+      width: 66%;
+      float: left;
+    }
+    .stories{
+      width: 32%;
+      float: right;
+    }
+    /* .below{
+      clear: both;
+      border: 1px solid red;
+    } */
+  .columnright{
+    width: 30%;
+    float: right;
+    }
+
+.clearfix:after, .banner::after{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* <header>
+  <section class="logo">
+    <a href="https://techcrunch.com/"><img src="images/TC Logo.jpg" alt="Tech Crunch Logo"></a>
+  </section>
+  <section class="tip">  
+    <p>Got a tip? <a href="X">Let us know.</a></p>
+    <ul>
+      <li>News <i class="fa-solid fa-caret-down"></i></li>
+      <li>Video <i class="fa-solid fa-caret-down"></i></li>
+      <li>Events <i class="fa-solid fa-caret-down"></i></li>
+      <li>Crunchbase</li>
+    </ul>
+  </section>
+  <section class="follow">
+    <span>Follow Us</span>
+    <ul>
+      <li><a href="https://www.facebook.com//techcrunch"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="https://www.instagram.com/techcrunch/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://twitter.com/techcrunch"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="https://www.youtube.com/user/techcrunch"><i class="fa-brands fa-youtube"></i></a></li>
+      <li><a href="https://techcrunch.com/tag/flipboard/"><i class="fa-brands fa-flipboard"></i></a></li>
+      <li><a href="https://www.linkedin.com/company/techcrunch"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://techcrunch.com/tag/google-plus/"><i class="fa-brands fa-google-plus-g"></i></a></li>
+      <li><a href="https://rss.app/rss-feed/techcrunch-rss-feed/"><i class="fa-solid fa-rss"></i></a></li>
+    </ul>
+
+    <a href="Link"><button><i class="fa-brands fa-facebook-messenger" alt="messenger icon"></i> Message Us</button></a>
+        <input type="search" placeholder="Search">
+        <button><i class="fa-solid fa-magnifying-glass" alt="magnifying glass icon"></i></button>
+      </section>
+</header> */
+
+header img{
+  height: 123px;
+}
+.tip p{
+  color: #a5a5a5;
+  padding-top: 10px;
+}
+.tip a:link{
+  color: #089e00;
+  text-decoration: none;
+}
+.tip a:visited{
+  color: #089e00;
+}
+.tip li{
+  float: left;
+  margin-right: 20px;
+  list-style: none;
+  color: #3e433e;
+  font-size: 17px;
+}
+.tip ul{
+  padding-left: 0px;
+  padding-top: 15px;
+}
+.tip i{
+  color: #a5a5a5;
+}
+.follow{
+  color: #a5a5a5;
+}
+.follow li a{
+  display: block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+.follow li i{
+  padding-top: 7px;
+}
+.follow a:link{
+  color: #969996;
+  background-color: #ececec;
+}
+.follow a:visited{
+  color: #969996;
+  background-color: #ececec;
+}
+.follow li{
+  float: left;
+  margin-right: 10px;
+  list-style: none;
+}
+.follow ul{
+  margin-top: 13px;
+  padding-left: 0;
+}
+.follow ul + a{
+  margin-left: 18px;
+}
+.follow span{
+  padding-top: 20px;
+  margin-left: 40px;
+}
+.follow button{
+  height: 40px;
+  width: 130px;
+  background-color: #3e433e;
+  border-style: none;
+  color: white;
+  font-size: 15px;
+}
+.follow input{
+  height: 40px;
+  width: 248px;
+  border: 1px solid #dadada;
+}
+.follow input::placeholder{
+  color: #089e00;
+  font-weight: bold;
+}
+.follow input + button{
+  width: 40px;
+  background-color: transparent;
+  border: 1px solid #dadada;
+  color: #a5a5a5;
+}
+#hamburger{
+  display: none;
+}
+
+/* <section class="banner">
+<h3>10TH ANNUAL CRUNCHIES</h3>
+<P>Brooklyn 99 Star Chelsea Peretti To Host The Crunchies This February</P>
+<a href="Link"><span>Get Your Tickets Today <i class="fa-solid fa-caret-right" alt="cavet right"></i></span></a>
+</section> */
+
+.banner{
+  background-color: #0f4a00;
+  color: white;
+}
+.banner h3{
+  text-align: right;
+}
+.banner p{
+  font-size: 12px;
+  text-align: center;
+  margin-top: 25px;
+}
+.banner a{
+  margin-top: 23px;
+}
+.banner a:link{
+  color: white;
+  text-decoration: none;
+}
+.banner a:visited{
+  color: white;
+}
+
+/* <section class="report">
+          <h1>WATCH NOW Crunch Report</h1>
+          <video controls="controls"> 
+            <source src="Images/Forward March.mp4" alt="placeholder video">
+          </video> 
+          <h5>Crunch Report is TechCrunch's daily news show. New episodes every weekday at 7 PM ET/ 4 PM PT.</h5>
+        </section> */
+
+.report{
+  margin-left: 10px;
+}
+.report h1{
+  font-size: 27px;
+  font-weight: lighter;
+  background: linear-gradient(to right, #3e433e 27%, #089e00 27%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 17px;
+}
+.report h5{
+  color: #b1b6aa;
+  font-size: 15px;
+  margin-top: 0px;
+}
+video{
+  width: 626px;
+}
+
+/* <section class="stories">
+          <section>
+            <h2>Featured Stories</h2>
+          </section>
+          <section>
+            <a href="https://techcrunch.com/2017/01/11/facebook-journalism-project/"><img src="images/1.png" alt="Placeholder Image">
+            <h3>Facebook previews Journalism Project features</h3>
+            <h5>by Josh Constine</h5></a>
+          </section> */
+
+.stories section{
+  height: auto;
+  clear: both;
+}
+.stories img{
+  float: left;
+  width: 40%;
+  margin-bottom: 5px;
+}
+.stories h3, .stories h5{
+  float: right;
+  width: 58%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.stories a:link{
+  color: #3e433e;
+}
+.stories a:visited{
+  color: #3e433e;
+}
+.stories h5{
+  font-style: italic;
+  color: #aab6ae;
+}
+
+/* <section class="below">
+          <button>LATEST</button>
+          <button>POPULAR</button>
+        </section> */
+
+/* .below{
+  margin-left: 10px;
+}
+.below button{
+  background-color: white;
+} */
+
+
+@media (min-width: 426px) and (max-width: 768px){
+  .logo{
+    width: 50%;
+  }
+  .tip{
+    width: 50%;
+    padding-left: 10px;
+  }
+  .tip p{
+    padding-top: 7px;
+    margin-bottom: 6px;
+  }
+  .tip li{
+    margin-right: 18px;
+  }
+  .follow{
+    width: 100%;
+  }
+  .follow span{
+    margin-left: 145px;
+    width: 14%;
+    text-align: center;
+    padding-top: 28px;
+  }
+  .follow ul{
+    width: 50%;
+    margin-top: 20px;
+  }
+  .follow ul + a{
+    margin-left: 160px;
+  }
+  .follow input{
+   width: 218px;
+  }
+ 
+  .banner h3, .banner p, .banner a{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+ 
+  .report{
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .report h1{
+   background: linear-gradient(to right, #3e433e 50%, #089e00 50%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  }
+  .report video{
+    width: 98%;
+  }
+  .stories{
+    width: 100%;
+  }
+  .columnright{
+    display: none;
+  }
+  .columnleft{
+   width: 100%;
+  }
+  .stories{
+    text-align: center;
+  }
+  .stories img{
+    width: 20%;
+  }
+  .stories section:nth-child(2), .stories section:nth-child(3), .stories section:nth-child(4), .stories section:nth-child(5){
+    margin-left: 70px;
+  }
+  .stories h3{
+    padding: 20px 100px 0 0px;
+  }
+  .stories h5{
+    padding-right: 100px;
+  }
+ }
+
+ @media all and (max-width: 425px){
+  .logo{
+    width: 50%;
+  }
+  .tip{
+    width: 50%;
+    padding-left: 10px;
+  }
+  .tip p{
+    padding-top: 7px;
+    margin-bottom: 6px;
+  }
+  .tip li{
+    display: none;
+  }
+  #hamburger{
+    display: block;
+    font-size: 170%;
+  }
+  .follow{
+    width: 100%;
+  }
+  .follow span{
+    margin-left: 5px;
+    width: 14%;
+    text-align: center;
+  }
+  .follow ul{
+    width: 84%;
+    margin-top: 20px;
+  }
+  .follow ul + a{
+    margin-left: 10px;
+  }
+  .follow input{
+   width: 180px;
+  }
+ 
+  .banner h3, .banner p, .banner a{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+ 
+  .report{
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .report h1{
+   background: linear-gradient(to right, #3e433e 50%, #089e00 50%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  }
+  .report video{
+    width: 98%;
+  }
+  .stories{
+    width: 100%;
+  }
+  .columnright{
+    display: none;
+  }
+  .columnleft{
+   width: 100%;
+  }
+  .stories{
+    text-align: center;
+  }
+ }
+
+ @media all and (max-width: 375px){
+  .logo{
+    width: 40%;
+  }
+ 
+ .logo img{
+   width: 100%;
+   height: auto;
+ }
+ .tip{
+   width: 60%
+ }
+ .tip p {
+   padding-top: 0;
+   font-size: 0.875rem;
+ }
+ .tip ul{
+   padding-top: 0;
+   margin-top: 1%;
+ }
+ .follow{
+   margin-bottom: 1%;
+ }
+ .follow span{
+   float: none;
+   margin-left: 40%;
+ }
+ .follow ul{
+   float: none;
+   width: 100%;
+   margin-top: 1%;
+   margin-left: 10%;
+ }
+ .follow li{
+   font-size: 1rem;
+   margin-right: 0.3125rem;
+ }
+ .follow ul + a{
+   margin-left: 0;
+ }
+ .follow button{
+   width: 4.6875rem;
+   font-size: 0.7rem;
+ }
+ .follow input {
+   width: 63%;
+ }
+ .report h1{
+   font-size: 1.25rem;
+ }
+}
+
+ @media all and (max-width: 320px){
+   .logo{
+     width: 40%;
+   }
+  
+  .logo img{
+    width: 100%;
+    height: auto;
+  }
+  .tip{
+    width: 60%
+  }
+  .tip p {
+    padding-top: 0;
+    font-size: 0.875rem;
+  }
+  .tip ul{
+    padding-top: 0;
+    margin-top: 1%;
+  }
+  .follow{
+    margin-bottom: 1%;
+  }
+  .follow span{
+    float: none;
+    margin-left: 36%;
+  }
+  .follow ul{
+    float: none;
+    width: 100%;
+    margin-top: 1%;
+  }
+  .follow li{
+    font-size: 0.875rem;
+    margin-right: 0.3125rem;
+  }
+  .follow ul + a{
+    margin-left: 0;
+  }
+  .follow button{
+    width: 4.6875rem;
+    font-size: 0.7rem;
+  }
+  .follow input {
+    width: 56%;
+  }
+  .report h1{
+    font-size: 1.25rem;
+  }
+}
