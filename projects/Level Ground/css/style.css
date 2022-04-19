@@ -1,0 +1,410 @@
+*{
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+body{font-family: arial;}
+
+/* <header class="clearfix">
+      <section>
+        <ul>
+          <li>CLASSES</li>
+          <li>HIRE US</li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </section>
+      <section>ICON</section>
+      <section><button>DONATE</button></section>
+    </header> */
+
+body header{
+  color: white;
+  background-color: #66768a;
+}
+  header section{
+    float: left;
+    width: 33.3333%;
+  }
+  #hamburger{
+    display: none;
+  }
+  .one{
+    color: white;
+    background-color: #66768a;
+  }
+  .two{
+    color: #161f2a;
+  }
+  .three{
+    background-color: #dbdfe2;
+    color: #161f2a;
+  }
+    .three section{
+      float: left;
+      width: 50%;
+    }
+  .four{
+    clear: both;
+    color: #161f2a;
+  }
+  .toptwo, .topthree{
+    float: left;
+    width: 50%;
+  }
+  .bottom section{
+    float: left;
+    width: 80%;
+  }
+  .bottom section + section{
+    float: left;
+    width: 20%;
+  }
+
+  main{
+    text-align: center;
+  }
+/************************** HEADER **************************/
+
+header li{
+  list-style: none;
+  float: left;
+  margin-right: 5%;
+}
+header i{
+  margin-top: 3%;
+}
+header span{
+  margin-left: 50%;
+}
+header button{
+  margin-top: 2%;
+  color: #66768a;
+  background-color: white;
+  border: 1px solid #66768a;
+  border-radius: 10%;
+  height: 1.5rem;
+  width: 15%;
+  margin-left: 75%;
+}
+
+/************************** ONE **************************/
+
+h1{
+  font-size: 400%;
+  font-weight: lighter;
+  margin-bottom: 2%;
+  margin-top: 0;
+  padding-top: 5%;
+}
+.one p{
+  padding-left: 12%;
+  padding-right: 12%;
+  font-size: 1.375rem;
+}
+.one i{
+  font-weight: 200;
+}
+.one span{
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 200%;
+}
+.one span + span{
+  margin-top: 5%;
+  color: #454a59;
+  font-style: italic;
+  font-size: 100%;
+  padding-bottom: 3%;
+}
+
+/************************** TWO **************************/
+
+.two h2{
+  margin-top: 7%;
+}
+.two p{
+  padding-left: 34%;
+  padding-right: 34%;
+  margin-bottom: 7%;
+}
+
+/************************** THREE **************************/
+
+.three section{
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+.three p{
+  padding-left: 21%;
+  padding-right: 21%;
+}
+.three button{
+  color: #161f2a;
+  background-color: #dbdfe2;
+  border: 1px solid grey;
+  width: 25%;
+  height: 2.5rem;
+}
+
+/************************** FOUR **************************/
+
+.four h2{
+  margin-top: 7%;
+}
+.four p{
+  padding-left: 34%;
+  padding-right: 34%;
+}
+.four button{
+  color: #161f2a;
+  background-color: white;
+  border: 1px solid grey;
+  width: 10%;
+  height: 2.5rem;
+  margin-bottom: 7%;
+}
+
+/************************** FOOTER **************************/
+
+footer{
+  background-color: #161f2a;
+  color: white;
+}
+footer li{
+  list-style: none;
+  float: left;
+  margin-right: 5%;
+}
+.toptwo span{
+  color: #66768a;
+}
+.toptwo{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.topthree span{
+  padding-left: 63%;
+  font-weight: bold;
+}
+.topthree p{
+  padding-left: 63%;
+  padding-right: 13%;
+}
+.bottom span{
+  padding-left: 90%;
+}
+.bottom section + section{
+  padding-top: 1%;
+}
+.bottom{
+  border-top: 2px solid #d8d8d8;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+/************************** MEDIA QUERIES **************************/
+
+@media all and (max-width: 628px){
+  header ul{
+    margin-top: 3%;
+  }
+  header button{
+    width: 40%;
+    margin-left: 30%;
+  }
+  .two p{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .three section{
+    width: 100%;
+  }
+  .four p{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .four button{
+    width: 20%;
+  }
+  .top section + section span {
+    padding-left: 13%;
+    display: block;
+  }
+  .top section + section p{
+    padding-left: 13%;
+  }
+  .bottom section{
+    width: 50%;
+  }
+  .bottom section + section{
+    padding-top: 2%;
+    width: 50%;
+  }
+  .bottom span{
+    padding-left: 90%;
+  }
+}
+
+@media all and (max-width: 425px){
+  header section{
+    width: 30%;
+  }
+  header section:nth-child(1) i{
+    padding-left: 30%;
+    padding-top: 5%;
+  }
+  header section:nth-child(2){
+    width: 70%;
+  }
+  header span{
+    margin-left: 27%;
+  }
+  header section:nth-child(3){
+    width: 100%;
+  }
+  header button{
+    width: 25%;
+    margin-left: 40%;
+  }
+  h1{
+    font-size: 200%;
+  }
+  .two p{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .three section{
+    width: 100%;
+  }
+  .three p{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .three button{
+    width: 40%;
+  }
+  .three img{
+    width: 100%;
+  }
+  .four p{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .four button{
+    width: 40%;
+  }
+  .top section{
+    width: 100%;
+  }
+  .top section + section span {
+    padding-left: 13%;
+    display: block;
+  }
+  .top section + section p{
+    padding-left: 13%;
+  }
+  .bottom section{
+    width: 100%;
+  }
+  .bottom section + section{
+    width: 100%;
+  }
+  .bottom p{
+    padding-left: 10%;
+  }
+  .bottom span{
+    padding-left: 46%;
+  }
+  #hamburger{
+    display: block;
+  }
+  header ul{
+    display: none;
+  }
+}
+
+@media all and (max-width: 325px){
+  header section{
+    width: 30%;
+  }
+  header section:nth-child(1) i{
+    padding-left: 30%;
+    padding-top: 5%;
+  }
+  header section:nth-child(2){
+    width: 70%;
+  }
+  header span{
+    margin-left: 27%;
+  }
+  header section:nth-child(3){
+    width: 100%;
+  }
+  header button{
+    width: 25%;
+    margin-left: 40%;
+  }
+  h1{
+    font-size: 200%;
+  }
+  .one p{
+    display: none;
+  }
+  .two p{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .three section{
+    width: 100%;
+  }
+  .three p{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .three button{
+    width: 40%;
+  }
+  .three img{
+    width: 100%;
+  }
+  .four p{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .four button{
+    width: 40%;
+  }
+  .top section{
+    width: 100%;
+  }
+  .top section + section span {
+    padding-left: 13%;
+    display: block;
+  }
+  .top section + section p{
+    padding-left: 13%;
+  }
+  .bottom section{
+    width: 100%;
+  }
+  .bottom p{
+    padding-left: 10%;
+  }
+  .bottom span{
+    padding-left: 46%;
+  }
+
+  #hamburger{
+    display: block;
+  }
+  header ul{
+    display: none;
+  }
+}

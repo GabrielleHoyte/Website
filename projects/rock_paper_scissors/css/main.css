@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+body{font-family: arial;
+  color: white;
+  text-align: center;
+}
+
+html { 
+  background: url(../images/switchbg.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-color: black;
+}
+h1{
+  margin-top: 6%;
+}
+#status{
+  margin-top: 1%;
+}
+.battle{
+  height: 14.625rem;
+  width: auto;
+}
+table{
+  margin-left: 47.5%;
+}

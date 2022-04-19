@@ -1,0 +1,325 @@
+*{
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+body{font-family: arial;}
+
+.one, .three{
+  background-color: #f1f3f5;
+}
+.five{
+  background-color: #b8c5d0;
+}
+    .one section{
+      float: left;
+      width: 50%;
+    }
+    .two section:nth-child(2), .two section:nth-child(3){
+      float: left;
+      width: 50%;
+    }
+    .two section:nth-child(4){
+      clear: both;
+    }
+    .history{
+      float: left;
+      width: 70%;
+    }
+    .photos{
+      float: left;
+      width: 30%;
+    }
+    .atsuko section{
+      float: left;
+      width: 20%;
+    }
+    .atsuko section + section{
+      float: left;
+      width: 80%;
+    }
+    .fish section{
+      float: left;
+      width: 50%;
+    }
+    .five section{
+      float: left;
+      width: 50%;
+      color: white;
+    }
+  .top section{
+    float: left;
+    width: 50%;
+  }
+  .bottom section{
+    float: left;
+    width: 16.6666%;
+  }
+  .bottom section:nth-child(4){
+    float: left;
+    width: 50%;
+  }
+footer{
+  background-color: #8f9ca3;
+  color: white;
+}
+
+#hamburger{
+  display: none;
+}
+
+/************************** LIST STYLE **************************/
+
+header li{
+  float: left;
+  margin-right: 8%;
+  list-style: none;
+}
+main{
+  clear: both;
+}
+.top li{
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+}
+footer li{
+  list-style: none;
+}
+.bottom section:nth-child(4) li{
+  float: left;
+  margin-right: 10px;
+}
+/************************** HEADER **************************/
+
+header ul{
+  padding-left: 10%;
+  color: #333942;
+  padding-bottom: 1%;
+}
+header button{
+  width: 200%;
+  height: 1.5rem;
+  color: white;
+  background-color: #333942;
+  border-style: none;
+}
+
+/************************** ONE **************************/
+
+.one img{
+  width: 40%;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+.one h2{
+  font-weight: lighter;
+  padding-left: 10%;
+  font-size: 200%;
+  margin-bottom: 0;
+  color: #333942;
+}
+.one p{
+  padding-left: 10%;
+  padding-right: 20%;
+  font-size: 120%;
+  margin-top: 1%;
+  color: #333942;
+}
+.one p + p{
+  padding-left: 10%;
+  padding-right: 0;
+  font-size: 90%;
+}
+.one input{
+  margin-left: 10%;
+  padding-left: 2%;
+  width: 45%;
+  height: 1.875rem;
+  border: 1px solid #89969e;
+  border-radius: 5%;
+}
+.one button{
+  margin-left: 2%;
+  width: 15%;
+  height: 1.875rem;
+  color: white;
+  background-color: #b8c5cf;
+  border: 1px solid #89969e;
+  border-radius: 6%;
+}
+.one i{
+  font-size: 2000%;
+  padding-top: 10%;
+  padding-left: 30%;
+  color: #8f9ca3;
+}
+
+/************************** TWO **************************/
+
+.two h1{
+color: #333942;
+text-align: center;
+font-size: 2rem;
+margin-left: 10%;
+margin-right: 10%;
+}
+.two section:nth-child(2) p{
+  color: #333942;
+  padding-left: 28%;
+  font-size: 1.25rem;
+}
+.two section:nth-child(3) p{
+  color: #333942;
+  padding-right: 28%;
+  font-size: 1.25rem;
+}
+.two section:nth-child(4) p{
+  color: #c2c9cd;
+  text-align: center;
+  font-size: 1.125rem;
+  font-style: italic;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+/************************** THREE **************************/
+
+.history{
+  color: #333942;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.photos img{
+  margin-right: 15%;
+  margin-top: 7%;
+}
+.photos span{
+  padding-left: 25%;
+  font-style: italic;
+  color: #c2c9cd;
+}
+.three{
+  padding-bottom: 2%;
+}
+
+/************************** FOUR **************************/
+
+.four{
+  color: #333942;
+}
+.four h2{
+  text-align: center;
+  font-weight: lighter;
+}
+.atsuko{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 2% 3%;
+  border: 1px solid #f1f3f5;
+}
+.atsuko section:nth-child(2){
+  padding-left: 5%;
+}
+.fish{
+  padding: 2% 5%;
+}
+
+/************************** FIVE **************************/
+
+
+
+/************************** MEDIA QUERIES **************************/
+
+@media all and (max-width: 1098px){
+  .three img, .atsuko img{
+    width: 100%;
+  }
+  header li{
+    margin-right: 7%;
+  }
+  .two section:nth-child(2), .two section:nth-child(3){
+    width: 100%;
+    text-align: center;
+  }
+  .two section:nth-child(2) p{
+    padding-left: 0;
+  }
+  .two section:nth-child(3) p{
+    padding-right: 0;
+  }
+  .fish section{
+    width: 100%;
+  }
+}
+@media all and (max-width: 913px){
+  header li{
+    margin-right: 6%;
+  }
+  .one i{
+    display: none;
+  }
+  .one section{
+    width: 100%;
+  }
+  .one img{
+    width: 60%;
+    margin-left: 20%;
+  }
+  .three{
+    float: none;
+  }
+  .history{
+    width: 100%;
+    text-align: center;
+  }
+  .photos{
+    width: 100%;
+  }
+  .photos section{
+    float: left;
+    width: 50%;
+    padding-left: 10%;
+  }
+  .photos img{
+    margin-left: 15%;
+  }
+  .three img{
+    width: 40%;
+  }
+  .atsuko section{
+    width: 100%;
+  }
+  .atsuko img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+  .atsuko section + section{
+    width: 100%;
+    text-align: center;
+  }
+  .fish{
+    text-align: center;
+  }
+}
+@media all and (max-width: 781px){
+  header li{
+    display: none;
+  }
+  #hamburger{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+  .photos section{
+    display: none;
+  }
+}

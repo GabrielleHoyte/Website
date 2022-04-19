@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>A Terrible Pokémon Battle</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <h1>Charmander, Squirtle or Bulbasaur?</h1>
+  <p>A Team Rocket Grunt has challenged you to a Pokémon battle!</p>
+  <p><strong>Charmander</strong> beats <strong>Bulbasaur</strong>, <strong>Bulbasaur</strong> beats <strong>Squirtle</strong>, and <strong>Squirtle</strong> beats <strong>Charmander</strong>.</p>
+
+  <div class="scoreboard">
+    <h2>Scoreboard</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td id="humanScore">0</td>
+          <td id="computerScore">0</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>You</th>
+          <th>Grunt</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <h2>Choose Your Pokémon Wisely</h2>
+
+  <img id="charmander" src="images/charmander.png" alt="charmander">
+  <img id="squirtle" src="images/squirtle.png" alt="squirtle">
+  <img id="bulbasaur" src="images/bulbasaur.png" alt="bulbasaur">
+
+  <div id="status"></div>
+  <div id="image"><img class="battle" src="images/battle.png" alt="pokémon battle"></div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
