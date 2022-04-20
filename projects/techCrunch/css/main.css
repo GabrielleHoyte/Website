@@ -405,21 +405,25 @@ video{
     width: 100%;
   }
   .follow span{
-    margin-left: 5px;
+    margin-left: 36%;
     width: 14%;
     text-align: center;
+    float: none;
   }
   .follow ul{
-    width: 84%;
+    width: 100%;
     margin-top: 20px;
+    float: none;
   }
   .follow ul + a{
     margin-left: 10px;
   }
   .follow input{
-   width: 180px;
+   width: 9.375rem;
   }
- 
+  .banner{
+    margin-top: 1%;
+  }
   .banner h3, .banner p, .banner a{
     width: 100%;
     text-align: center;
@@ -436,6 +440,7 @@ video{
    background: linear-gradient(to right, #3e433e 50%, #089e00 50%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+   font-size: 1.25rem;
   }
   .report video{
     width: 98%;
@@ -452,59 +457,20 @@ video{
   .stories{
     text-align: center;
   }
- }
-
- @media screen and (max-width: 375px){
-  .logo{
+  .stories img{
     width: 40%;
   }
- 
- .logo img{
-   width: 100%;
-   height: auto;
+  .stories section:nth-child(2), .stories section:nth-child(3), .stories section:nth-child(4), .stories section:nth-child(5){
+    margin-left: 0;
+  }
+  .stories h3{
+    padding: 0;
+  }
+  .stories h5{
+    padding-right: 0;
+    padding-top: 2%;
+  }
  }
- .tip{
-   width: 60%
- }
- .tip p {
-   padding-top: 0;
-   font-size: 0.875rem;
- }
- .tip ul{
-   padding-top: 0;
-   margin-top: 1%;
- }
- .follow{
-   margin-bottom: 1%;
- }
- .follow span{
-   float: none;
-   margin-left: 40%;
- }
- .follow ul{
-   float: none;
-   width: 100%;
-   margin-top: 1%;
-   margin-left: 10%;
- }
- .follow li{
-   font-size: 1rem;
-   margin-right: 0.3125rem;
- }
- .follow ul + a{
-   margin-left: 0;
- }
- .follow button{
-   width: 4.6875rem;
-   font-size: 0.7rem;
- }
- .follow input {
-   width: 63%;
- }
- .report h1{
-   font-size: 1.25rem;
- }
-}
 
  @media screen and (max-width: 380px){
    .logo{
