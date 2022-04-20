@@ -301,7 +301,7 @@ video{
 } */
 
 
-@media (min-width: 426px) and (max-width: 768px){
+@media screen and (max-width: 768px){
   .logo{
     width: 50%;
   }
@@ -382,7 +382,7 @@ video{
   }
  }
 
- @media all and (max-width: 425px){
+ @media screen and (max-width: 425px){
   .logo{
     width: 50%;
   }
@@ -454,7 +454,7 @@ video{
   }
  }
 
- @media all and (max-width: 375px){
+ @media screen and (max-width: 375px){
   .logo{
     width: 40%;
   }
@@ -506,7 +506,7 @@ video{
  }
 }
 
- @media all and (max-width: 320px){
+ @media screen and (max-width: 380px){
    .logo{
      width: 40%;
    }
@@ -537,6 +537,7 @@ video{
     float: none;
     width: 100%;
     margin-top: 1%;
+    margin-left: 5%;
   }
   .follow li{
     font-size: 0.875rem;
@@ -554,5 +555,17 @@ video{
   }
   .report h1{
     font-size: 1.25rem;
+  }
+  .stories img{
+    width: 40%;
+  }
+  .stories section:nth-child(2), .stories section:nth-child(3), .stories section:nth-child(4), .stories section:nth-child(5){
+    margin-left: 0;
+  }
+  .stories h3{
+    padding: 0;
+  }
+  .stories h5{
+    padding-right: 0;
   }
 }
