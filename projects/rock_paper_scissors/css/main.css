@@ -9,12 +9,25 @@
   line-height: 0;
   height: 0;
 }
+
+header div{
+  background-color: #ed786a;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+}
+header div a:link{
+  color: white;
+  text-decoration: none;
+}
+header div a:visited{
+  color: white;
+}
+
 body{font-family: arial;
   color: white;
   text-align: center;
 }
-
-html { 
+body { 
   background: url(../images/switchbg.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -23,7 +36,7 @@ html {
   background-color: black;
 }
 h1{
-  margin-top: 6%;
+  margin-top: 3%;
 }
 #status{
   margin-top: 1%;
@@ -34,4 +47,106 @@ h1{
 }
 table{
   margin-left: 47.5%;
+}
+
+/* @media only screen 
+  and (min-device-width: 831px) 
+  and (max-device-width: 1180px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+        header div{
+      margin-left: 40%;
+      margin-right: 40%;
+    }
+    h1{
+      padding-top: 10%;
+      font-size: 2.5rem;
+    }
+    p{
+      font-size: 1.063rem;
+    }
+    h2{
+      font-size: 1.75rem;
+    }
+    .battle{
+      height: 10.5rem;
+    }
+} */
+
+@media only screen 
+  and (min-device-width: 668px) 
+  and (max-device-width: 830px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    header div{
+      margin-left: 40%;
+      margin-right: 40%;
+    }
+    header{
+      padding-top: 0;
+    }
+    h1{
+      font-size: 1rem;
+      margin-top: 1%;
+    }
+    p{
+      font-size: 0.6875rem;
+    }
+    h2{
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .battle{
+      height: 5.5rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 321px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    header div{
+      margin-left: 40%;
+      margin-right: 40%;
+    }
+    header{
+      padding-top: 0;
+    }
+    h1{
+      padding-top: 2%;
+    }
+    .battle{
+      height: 9.5rem;
+  }
+}
+
+@media only screen 
+  and (max-device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    body{
+      height: 100vh;
+      width: 100vw;
+    }
+    header div{
+      margin-left: 40%;
+      margin-right: 40%;
+    }
+    h1{
+      font-size: 1.75rem;
+      margin-top: 1%;
+    }
+    p{
+      font-size: 0.8125rem;
+    }
+    h2{
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .battle{
+      height: 7.5rem;
+    }
 }

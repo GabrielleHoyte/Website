@@ -23,6 +23,19 @@ body{font-family: arial;}
       <section><button>DONATE</button></section>
     </header> */
 
+header div{
+  background-color: #ed786a;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+header div a:link{
+  color: white;
+  text-decoration: none;
+}
+header div a:visited{
+  color: white;
+}
+
 body header{
   color: white;
   background-color: #66768a;
@@ -88,7 +101,7 @@ header button{
   background-color: white;
   border: 1px solid #66768a;
   border-radius: 10%;
-  height: 1.5rem;
+  height: 2.1875rem;
   width: 15%;
   margin-left: 75%;
 }
@@ -211,6 +224,27 @@ footer li{
 
 /************************** MEDIA QUERIES **************************/
 
+@media all and (max-width: 1024px){
+  header button{
+    width: 30%;
+    margin-left: 55%;
+  }
+  .four button{
+    width: 15%;
+  }
+  .topthree span, .topthree p{
+    padding-left: 35%;
+  }
+  .bottom section{
+    float: none;
+    width: 100%;
+  }
+  .bottom section + section{
+    float: none;
+    width: 100%;
+  }
+}
+
 @media all and (max-width: 628px){
   header ul{
     margin-top: 3%;
@@ -304,11 +338,11 @@ footer li{
     width: 100%;
   }
   .top section + section span {
-    padding-left: 13%;
+    padding-left: 10%;
     display: block;
   }
   .top section + section p{
-    padding-left: 13%;
+    padding-left: 10%;
   }
   .bottom section{
     width: 100%;
@@ -317,7 +351,7 @@ footer li{
     width: 100%;
   }
   .bottom p{
-    padding-left: 10%;
+    padding-left: 7%;
   }
   .bottom span{
     padding-left: 46%;

@@ -11,6 +11,20 @@
 }
 body{font-family: arial;}
 
+header div{
+  background-color: #ed786a;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+header div a:link{
+  color: white;
+  text-decoration: none;
+}
+header div a:visited{
+  color: white;
+}
+
 .one, .three{
   background-color: #f1f3f5;
 }
